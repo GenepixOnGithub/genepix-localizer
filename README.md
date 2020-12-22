@@ -11,6 +11,8 @@ Installer les dependances :
 >pip install gpsphoto  
 >pip3 install gpsphoto
 
+Il est possible que gpsphoto demande des installations supplémentaires, faites un pip install des modules manquants indiqués dans l'erreur lorsque vous lancez le programme
+
 ## webbrowser
 
 >pip install webbrowser
