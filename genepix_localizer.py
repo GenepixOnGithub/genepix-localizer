@@ -13,9 +13,9 @@ class Window(QWidget):
 		self.setWindowTitle("GENEPIX Geolocalisation")
 		self.setGeometry(300,300, 800,600)
 		self.main_layout = QVBoxLayout()
-		label = QLabel(self)
+		self.lbl_logo = QLabel(self)
 		pixmap = QPixmap('img/genepix_localizer.png')
-		label.setPixmap(pixmap)
+		self.lbl_logo.setPixmap(pixmap)
 		self.lbl_browsed_img = QLabel(self)
 		self.lbl_browsed_img.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
 		self.setStyleSheet("background-color: #222; color: #fff; font-weight: bold;")
@@ -25,7 +25,7 @@ class Window(QWidget):
 		self.btn_search = QPushButton("Geolocaliser")
 		self.btn_search.setStyleSheet("background-color: #ff074b; padding: 15px; border-radius: 3px;")
 		self.btn_search.clicked.connect(self.geoloc)
-		self.main_layout.addWidget(label)
+		self.main_layout.addWidget(self.lbl_logo)
 		self.main_layout.addWidget(self.lbl_browsed_img)
 		self.main_layout.addWidget(self.btn_browse)
 		self.main_layout.addWidget(self.btn_search)
@@ -54,12 +54,10 @@ class Window(QWidget):
 		self.fname = file_output[0]
 		browsed_img = QPixmap(self.fname).scaled(300, 300, Qt.KeepAspectRatio) 
 		self.lbl_browsed_img.setPixmap(browsed_img)
- 
+
+
 myApp = QApplication(sys.argv)
 window = Window()
-window.show()
- 
-window.resize(600,400)
- 
+window.show() 
 myApp.exec_()
 sys.exit(0)
