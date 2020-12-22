@@ -42,7 +42,7 @@ class Window(QWidget):
 			return 
 		print(data['Latitude'], data['Longitude'])
 		try:
-			webbrowser.open(f"http://maps.google.com/?q={str(data['Latitude'])},{str(data['Longitude'])}")
+			webbrowser.open(f"http://maps.google.com/?q={data['Latitude']},{data['Longitude']}")
 		except Exception as e:
 			print(f"Error while trying to open webbrowser")
 			return
