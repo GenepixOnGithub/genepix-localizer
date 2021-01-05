@@ -19,4 +19,4 @@ Il est possible que gpsphoto demande des installations supplémentaires, faites 
 
 # Run
 
->python genepix-localizer.py
+>python genepix_localizer.py
