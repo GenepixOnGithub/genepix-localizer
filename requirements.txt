@@ -1,0 +1,5 @@
+PySide2
+gpsphoto
+exifread
+piexif
+Pillow  # PIL

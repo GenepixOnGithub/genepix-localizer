@@ -6,17 +6,9 @@ Small python/pyside tool to geolocate photo from exif data
 # Installation
 
 Installer les dependances :
-## GPSPhoto
-
->pip install gpsphoto  
->pip3 install gpsphoto
-
-Il est possible que gpsphoto demande des installations supplémentaires, faites un pip install des modules manquants indiqués dans l'erreur lorsque vous lancez le programme
-
-## webbrowser
-
->pip install webbrowser
-
+```
+python.exe -m pip install -r location/path/requirements.txt
+```
 # Run
 
 >python genepix_localizer.py
